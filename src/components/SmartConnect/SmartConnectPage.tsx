@@ -146,7 +146,6 @@ const SmartConnectPage = () => {
         </div>
       </section>
 
-
       <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <Carousel

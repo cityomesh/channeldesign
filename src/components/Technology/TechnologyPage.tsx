@@ -318,11 +318,7 @@ const TechnologyPage = () => {
         </div>
       </div>
 
-
-
-
       <div className="flex flex-wrap justify-center gap-5">
-        {/* First Text Animation */}
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -342,7 +338,6 @@ const TechnologyPage = () => {
           </p>
         </motion.div>
 
-        {/* Second Text Animation */}
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -363,7 +358,6 @@ const TechnologyPage = () => {
           </p>
         </motion.div>
 
-        {/* Third Text Animation */}
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -380,7 +374,6 @@ const TechnologyPage = () => {
           </p>
         </motion.div>
 
-        {/* Fourth Text Animation */}
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -400,7 +393,6 @@ const TechnologyPage = () => {
           </p>
         </motion.div>
 
-        {/* Fifth Text Animation */}
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
@@ -440,8 +432,6 @@ const TechnologyPage = () => {
           </p>
         </motion.div>
       </div>
-
-
     </div>
   );
 };

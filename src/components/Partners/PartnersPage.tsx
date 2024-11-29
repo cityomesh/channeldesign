@@ -34,7 +34,6 @@ const PartnersPage = () => {
 
   return (
     <div className="bg-white">
-      {/* Header Section */}
       <div className="relative w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[40rem] flex items-center justify-center px-4 sm:px-4">
         <Image
           src="/network.png"

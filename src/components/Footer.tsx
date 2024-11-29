@@ -6,7 +6,6 @@ function Footer() {
 <footer className="bg-[#0a0f2c] text-white p-10">
       <div className="container md:w-full lg:w-[85%] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
         
-        {/* Quick Links */}
         <div>
           <h5 className="font-bold text-lg mb-1 ">Quick Link</h5>
           <hr className="w-[60px] font-extrabold border-t-2 mb-5" ></hr>
@@ -38,7 +37,6 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h5 className="font-bold text-lg mb-1">Contact</h5>
           <hr className="w-[60px] font-extrabold border-t-2 mb-5" ></hr>
@@ -58,9 +56,7 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Gallery */}
         <div>
-       
           <h5 className="font-bold text-lg mb-1">Gallery</h5>
           <hr className="w-[60px] font-extrabold border-t-2 mb-5" ></hr>
           <div className="grid grid-cols-3 gap-2">
@@ -73,9 +69,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Newsletter */}
         <div>
-      
           <h5 className="font-bold text-lg mb-1">Newsletter</h5>
           <hr className="w-[60px] font-extrabold border-t-2 mb-5" ></hr>
           <p className="mb-4">City Online Media Private Limited.</p>
@@ -93,13 +87,8 @@ function Footer() {
             </button>
           </form>
         </div>
-        
       </div>
       <hr className="mt-12 lg:w-[86%] text-gray-400 border-slate-500 mx-auto" ></hr>
-
-
-
-
         <div className="container mx-auto px-4 text-center mt-6">
           <div className="flex justify-center space-x-6">
             <a href="https://www.linkedin.com" className="text-2xl"><FaLinkedin /></a>

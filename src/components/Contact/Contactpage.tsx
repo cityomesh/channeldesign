@@ -10,7 +10,6 @@ const FacilitiesPage = () => {
   return (
     <div className="bg-white">
     <div>
-      {/* Hero Section */}
       <div className="relative w-full h-[15rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] flex items-center justify-center px-4 sm:px-4 mt-[6rem]">
         <Image
         src="/dhs.png"
@@ -118,8 +117,7 @@ const FacilitiesPage = () => {
               </label>
             </div>
             <div className="relative">
-              <textarea
-               
+              <textarea               
                 placeholder=" "
                 className="peer w-full px-3 py-2 border border-blue-500  rounded focus:outline-none focus:ring-2 focus:shadow focus:border-transparent"
               ></textarea>

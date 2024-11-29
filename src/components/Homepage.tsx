@@ -38,8 +38,6 @@ const Homepage = () => {
   const images = ["/kii.jpg", "/CRTs1.webp", "/cable3.jpeg"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -47,8 +45,6 @@ const Homepage = () => {
 
     return () => clearInterval(interval);
   }, [images.length]);
-
-
 
   const featureData = [
     {
@@ -101,8 +97,6 @@ const Homepage = () => {
     setSelectedLocation(location);
     setDropdownOpen(false);
   };
-
-
 
   const services = [
     {
