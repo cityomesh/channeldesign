@@ -4,8 +4,7 @@ import React from "react";
 
 const PartnersPage = () => {
 
-
-  const getBackgroundColor = (language:any) => {
+  const getBackgroundColor = (language: string): string => {
     switch (language.toLowerCase()) {
       case "hindi":
         return "bg-red-200";
@@ -675,9 +674,6 @@ const PartnersPage = () => {
     { number: 1179, name: "Prameya News 7", language: "ODIA", price: 0 },
     { number: 1181, name: "Prarthana Tv", language: "ODIA", price: 2 },
   ];
-  
-
-
 
   return (
     <div className="flex justify-center items-center mt-[5rem]">
