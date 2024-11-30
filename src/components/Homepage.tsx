@@ -3,6 +3,33 @@
 import React from "react";
 
 const PartnersPage = () => {
+
+
+  const getBackgroundColor = (language:any) => {
+    switch (language.toLowerCase()) {
+      case "hindi":
+        return "bg-red-200";
+      case "english":
+        return "bg-blue-200";
+      case "telugu":
+        return "bg-yellow-200";
+      case "tamil":
+        return "bg-green-200";
+      case "bengali":
+        return "bg-pink-200";
+      case "bhojpuri":
+        return "bg-purple-200";
+      case "assamese":
+        return "bg-teal-200";
+      case "punjabi":
+        return "bg-orange-200";
+      case "odia":
+        return "bg-gray-200";
+      default:
+        return "bg-white";
+    }
+  };
+
   const channelData = [
     { number: 101, name: "STAR PLUS HD", language: "Hindi", price: 22 },
     { number: 102, name: "Colors HD", language: "Hindi", price: 19 },
@@ -650,48 +677,55 @@ const PartnersPage = () => {
   ];
   
 
-return (
-  <div className="flex justify-center items-center mt-[5rem]">
-    <div className="w-full max-w-6xl bg-white p-6 overflow-hidden">
-      <h1 className="text-[24px] font-bold mb-4 text-blue-900 text-center">Channel List</h1>
-      <div className="flex bg-blue-300 font-bold">
-        <p className=" border-gray-300 py-3 ml-[3rem]">Number</p>
-        <p className=" border-gray-300 py-3 ml-[18rem]">Name</p>
-        <p className=" border-gray-300 py-3 ml-[22rem]">Language</p>
-        <p className=" border-gray-300 py-3 ml-[8rem]">Price (₹)</p>
-      </div>
-      <div className="overflow-hidden max-h-[600px]">
-        <table className="table-auto w-full border-collapse border border-gray-300 animate-scroll-up">
-          <tbody>
-            {channelData.map((channel) => (
-              <tr key={channel.number} className="text-center">
-                <td className="border border-gray-300 font-bold px-6 py-4 hover:text-blue-900">{channel.number}</td>
-                <td className="border border-gray-300 font-bold px-6 py-4">{channel.name}</td>
-                <td className="border border-gray-300 font-bold px-6 py-4">{channel.language}</td>
-                <td className="border border-gray-300 font-bold px-6 py-4">{channel.price}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-    
-    <style jsx>{`
-      @keyframes scroll-up {
-        0% {
-          transform: translateY(0);
-        }
-        100% {
-          transform: translateY(-100%);
-        }
-      }
 
-      .animate-scroll-up {
-        animation: scroll-up 350s linear infinite;
-      }
-    `}</style>
-  </div>
-);
+
+  return (
+    <div className="flex justify-center items-center mt-[5rem]">
+      <div className="w-full max-w-6xl bg-white p-6 overflow-hidden">
+        <h1 className="text-[24px] font-bold mb-4 text-blue-900 text-center">Channel List</h1>
+        <div className="flex bg-blue-300 font-bold">
+          <p className="border-gray-300 py-3 ml-[3rem]">Number</p>
+          <p className="border-gray-300 py-3 ml-[18rem]">Name</p>
+          <p className="border-gray-300 py-3 ml-[22rem]">Language</p>
+          <p className="border-gray-300 py-3 ml-[8rem]">Price (₹)</p>
+        </div>
+        <div className="overflow-hidden max-h-[600px]">
+          <table className="font-bold text-[20px] table-auto w-full border-collapse border border-gray-300 animate-scroll-up">
+            <tbody>
+              {channelData.map((channel) => (
+                <tr
+                  key={channel.number}
+                  className={`text-center ${getBackgroundColor(channel.language)}`}
+                >
+                  <td className="border-2 border-gray-400 font-bold px-6 py-4 hover:text-blue-900">
+                    {channel.number}
+                  </td>
+                  <td className="border-2 border-gray-400 font-bold px-6 py-4">{channel.name}</td>
+                  <td className="border-2 border-gray-400 font-bold px-6 py-4">{channel.language}</td>
+                  <td className="border-2 border-gray-400 font-bold px-6 py-4">{channel.price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes scroll-up {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-100%);
+          }
+        }
+
+        .animate-scroll-up {
+          animation: scroll-up 400s linear infinite;
+        }
+      `}</style>
+    </div>
+  );
 };
 
 export default PartnersPage;
